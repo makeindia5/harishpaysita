@@ -39,7 +39,7 @@ jobs:
 
       - name: Verify API Health
         env:
-          API_URL: https://indiaapay.com
+          API_URL: https://freepe.in
         run: node scripts/check-api.js
 
       - name: Setup Expo
@@ -54,7 +54,7 @@ jobs:
       - name: Build App
         run: npx eas build --platform android --profile production --non-interactive
         env:
-          EXPO_PUBLIC_API_URL: https://indiaapay.com
+          EXPO_PUBLIC_API_URL: https://freepe.in
 
       - name: Submit to Play Internal
         run: npx eas submit --platform android --track internal --non-interactive
