@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Alert } from 'react-native';
 import axios from 'axios';
+import API_BASE_URL from '../constants/api';
 const Flight2 = ({ route }) => {
   // Destructure the passed props
-  const {origin, destination, cabinClass, journeyType,
+  const { origin, destination, cabinClass, journeyType,
     departureDate,
     adultCount,
     childCount,
@@ -16,7 +17,7 @@ const Flight2 = ({ route }) => {
     const pad = (num) => String(num).padStart(2, '0');
     return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T00:00:00`;
   };
-  console.log(  origin,
+  console.log(origin,
     destination,
     cabinClass,
     journeyType,
@@ -27,37 +28,37 @@ const Flight2 = ({ route }) => {
     directFlight,
     oneStopFlight,)
   // Fetch flight data from backend
-const handleSearchFlight = async () => {
+  const handleSearchFlight = async () => {
     try {
-  const response = await axios.post('http://192.168.29.252:5000/api/flightSearch', {
-  JourneyType: journeyType,
-  AdultCount: adultCount,
-  ChildCount: childCount,
-  InfantCount: infantCount,
-  Origin: origin,
-  Destination: destination,
-  date: formatForBackend(departureDate),
-  CabinClass: cabinClass,
-   DirectFlight:directFlight,
-   OnestopFlight:oneStopFlight,
-});
-console.log('Flight response data:', response.data); 
-    //   const formattedItems = response.data.map((e) => ({
-    //     label: e.CITYNAME,
-    //     value: e.CITYCODE,
-    //     origin,
-    //     destination,
-    //     cabinClass,
-    //     journeyType,
-    //     departureDate,
-    //     adultCount,
-    //     childCount,
-    //     infantCount,
-    //     directFlight,
-    //     oneStopFlight,
-    //   }));
+      const response = await axios.post(`${API_BASE_URL}/api/flightSearch`, {
+        JourneyType: journeyType,
+        AdultCount: adultCount,
+        ChildCount: childCount,
+        InfantCount: infantCount,
+        Origin: origin,
+        Destination: destination,
+        date: formatForBackend(departureDate),
+        CabinClass: cabinClass,
+        DirectFlight: directFlight,
+        OnestopFlight: oneStopFlight,
+      });
+      console.log('Flight response data:', response.data);
+      //   const formattedItems = response.data.map((e) => ({
+      //     label: e.CITYNAME,
+      //     value: e.CITYCODE,
+      //     origin,
+      //     destination,
+      //     cabinClass,
+      //     journeyType,
+      //     departureDate,
+      //     adultCount,
+      //     childCount,
+      //     infantCount,
+      //     directFlight,
+      //     oneStopFlight,
+      //   }));
 
-    //   setItems(formattedItems);
+      //   setItems(formattedItems);
     } catch (error) {
       console.error('Error fetching flights:', error.message);
       Alert.alert('Error', 'Something went wrong while fetching flights.');

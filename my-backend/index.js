@@ -43,6 +43,15 @@ app.use('/api/userDetails',userDetails);
 app.use('/api', hlrCheckRoute);
 app.use("/api/security", securityRoutes);
 
+// Health check endpoint for CI/CD validation
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    environment: process.env.NODE_ENV || "production",
+    api: "paysita-backend"
+  });
+});
+
 // MySQL Connection
 const db = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',

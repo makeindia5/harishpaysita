@@ -13,6 +13,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import RNPickerSelect from 'react-native-picker-select';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import axios from 'axios';
+import API_BASE_URL from '../constants/api';
 const formatForBackend = (date) => {
   const pad = (num) => String(num).padStart(2, '0');
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
@@ -42,7 +43,7 @@ const FlightSearchScreen = ({ navigation }) => {
 
   const handleFetchFlight = async () => {
     try {
-      const response = await axios.get('http://192.168.29.252:5000/api/flightAirport');
+      const response = await axios.get(`${API_BASE_URL}/api/flightAirport`);
       const formattedItems = response.data.map((e) => ({
         label: e.CITYNAME,
         value: e.CITYCODE,
