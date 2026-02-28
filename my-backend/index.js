@@ -10,12 +10,12 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const addressRoutes = require("./routes/address");
-const userDetails =require("./routes/userDetails");
-const securityRoutes=require("./routes/security");
+const userDetails = require("./routes/userDetails");
+const securityRoutes = require("./routes/security");
 
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 6000;
 app.use(cors());
 app.use(express.json());
 app.use(express.static('uploads'));
@@ -39,7 +39,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.use("/api/address", addressRoutes);
-app.use('/api/userDetails',userDetails);
+app.use('/api/userDetails', userDetails);
 app.use('/api', hlrCheckRoute);
 app.use("/api/security", securityRoutes);
 
@@ -119,16 +119,16 @@ app.get('/users', (req, res) => {
 app.get('/api/token', (req, res) => {
   const token1 = getToken('WALLET');
   const token2 = getToken('WALLET');
- const token3 = getToken('WALLET');
+  const token3 = getToken('WALLET');
 
 
-  res.json({ token1, token2,token3 });
+  res.json({ token1, token2, token3 });
 });
 
 app.post('/submit-general', (req, res) => {
   const { name, contact, email, insuranceType, additionalCoverage } = req.body;
 
-const query = `
+  const query = `
   INSERT INTO general_insurance 
   (name, contact, email, insuranceType, additionalCoverage) 
   VALUES (?, ?, ?, ?, ?)
@@ -262,7 +262,7 @@ app.post('/submit-tour-travel', (req, res) => {
 // POST /custom-packages
 app.post('/custom-packages', async (req, res) => {
   const { destination, days, nights, priceRange, adults, children } = req.body;
-  
+
   const query = `
     INSERT INTO custom_packages (destination, days, nights, price_range, adults, children)
     VALUES ($1, $2, $3, $4, $5, $6)
@@ -355,7 +355,7 @@ app.post('/api/referral', async (req, res) => {
       VALUES (?, ?, ?, ?, ?)
     `;
 
-     db.query(query, [name, email, contact, category, message]);
+    db.query(query, [name, email, contact, category, message]);
 
     res.status(200).json({ message: 'Referral submitted successfully' });
   } catch (err) {
