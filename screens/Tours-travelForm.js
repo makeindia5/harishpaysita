@@ -45,7 +45,7 @@ const TourAndTravelsForm = () => {
     }
 
     try {
-      const response = await fetch('https://indiaapay.com/submit-tour-travel', {
+      const response = await fetch('https://freepe.in/submit-tour-travel', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

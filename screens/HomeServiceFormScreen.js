@@ -84,7 +84,7 @@ const validateAndSubmit = async () => {
     return Alert.alert(t('home_service_form.validation_error'), t('home_service_form.select_service'));
 
   try {
-    const res = await axios.post('https://indiaapay.com/api/home-service', form); // ← यहाँ अपने IP का इस्तेमाल करें
+    const res = await axios.post('https://freepe.in/api/home-service', form); // ← यहाँ अपने IP का इस्तेमाल करें
     console.log(res.data);
     Alert.alert('✅ Success', 'Form submitted successfully!', [{ text: 'OK', onPress: handleReset }]);
   } catch (err) {

@@ -48,7 +48,7 @@ const handleSubmit = async () => {
   }
 
   try {
-    const response = await fetch('https://indiaapay.com/loan-finance', {
+    const response = await fetch('https://freepe.in/loan-finance', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)

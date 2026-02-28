@@ -251,7 +251,7 @@ const DonationAndCharityFormScreen = () => {
     const payload = { ...form, DonationType: finalTypes.join(", ") };
 
     try {
-      const res = await fetch("https://indiaapay.com/api/submit-donation", {
+      const res = await fetch("https://freepe.in/api/submit-donation", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

@@ -143,7 +143,7 @@ const handleSaveToDatabase = async () => {
 
   try {
     const res = await axios.post(
-      "https://indiaapay.com/api/userDetails",   // ✅ FIXED URL
+      "https://freepe.in/api/userDetails",   // ✅ FIXED URL
       {
         user_id: Number(userId),
         details: selectedOptions,

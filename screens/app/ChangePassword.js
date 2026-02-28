@@ -33,7 +33,7 @@ const ChangePassword = () => {
     const user = JSON.parse(storedUser);
 
     const res = await axios.post(
-      "https://indiaapay.com/api/security/verify-passcode",
+      "https://freepe.in/api/security/verify-passcode",
       {
         userId: user.id,
         passcode: enteredPasscode

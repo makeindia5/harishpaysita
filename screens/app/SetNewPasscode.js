@@ -36,7 +36,7 @@ const SetNewPasscode = () => {
     const user = JSON.parse(storedUser);
 
     await axios.post(
-      "https://indiaapay.com/api/security/set-passcode",
+      "https://freepe.in/api/security/set-passcode",
       {
         userId: user.id,
         passcode: finalPasscode

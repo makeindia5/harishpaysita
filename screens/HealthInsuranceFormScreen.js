@@ -58,7 +58,7 @@ const handleSubmit = async () => {
   }
 
   try {
-    const response = await fetch('https://indiaapay.com/submit-health', {
+    const response = await fetch('https://freepe.in/submit-health', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

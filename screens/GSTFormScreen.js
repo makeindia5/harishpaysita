@@ -41,7 +41,7 @@ const GSTFormScreen = () => {
     selectedPeriod;
 
   const handleSave = () => {
-    fetch('https://indiaapay.com/api/gst', {
+    fetch('https://freepe.in/api/gst', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({

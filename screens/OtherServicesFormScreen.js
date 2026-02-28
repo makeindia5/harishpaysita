@@ -103,7 +103,7 @@ export default function OtherServicesFormScreen() {
 
     try {
       const res = await axios.post(
-        "https://indiaapay.com/submit-other-services",
+        "https://freepe.in/submit-other-services",
         form,
         { headers: { "Content-Type": "application/json" }, timeout: 10000 }
       );

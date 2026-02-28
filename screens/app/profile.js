@@ -153,7 +153,7 @@ const Profile = () => {
     const user = JSON.parse(userStr);
 
     const res = await axios.get(
-      `https://indiaapay.com/api/address/${user.id}`
+      `https://freepe.in/api/address/${user.id}`
     );
 
     setSavedAddresses(res.data || []);
@@ -205,7 +205,7 @@ const Profile = () => {
       setLoading(true);
 
       const response = await axios.put(
-        "https://indiaapay.com/api/auth/updateName",
+        "https://freepe.in/api/auth/updateName",
         {
           userId: user.id,
           name: tempName.trim(),
@@ -252,7 +252,7 @@ const Profile = () => {
               const userData = JSON.parse(userStr);
 
               await axios.delete(
-                `https://indiaapay.com/api/address/${addressId}`,
+                `https://freepe.in/api/address/${addressId}`,
                 {
                   headers: {
                     Authorization: `Bearer ${userData.token}`,

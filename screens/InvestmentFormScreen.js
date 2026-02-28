@@ -49,7 +49,7 @@ const InvestmentFormScreen = () => {
     }
 
     try {
-      const response = await fetch('https://indiaapay.com/submit-investment', {
+      const response = await fetch('https://freepe.in/submit-investment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

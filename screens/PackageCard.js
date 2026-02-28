@@ -122,7 +122,7 @@ export default function TravelPackages() {
     });
 const handleSubmit = async () => {
   try {
-    const response = await fetch('https://indiaapay.com/custom-packages', {
+    const response = await fetch('https://freepe.in/custom-packages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

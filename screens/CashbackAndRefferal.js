@@ -37,7 +37,7 @@ const CashbackAndReferral = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('https://indiaapay.com/api/referral', {
+      const response = await fetch('https://freepe.in/api/referral', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
