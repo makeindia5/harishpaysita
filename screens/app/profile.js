@@ -153,7 +153,7 @@ const Profile = () => {
     const user = JSON.parse(userStr);
 
     const res = await axios.get(
-      `http://192.168.29.22:5000/api/address/${user.id}`
+      `https://indiaapay.com/api/address/${user.id}`
     );
 
     setSavedAddresses(res.data || []);
@@ -205,7 +205,7 @@ const Profile = () => {
       setLoading(true);
 
       const response = await axios.put(
-        "http://192.168.29.22:5000/api/auth/updateName",
+        "https://indiaapay.com/api/auth/updateName",
         {
           userId: user.id,
           name: tempName.trim(),
@@ -252,7 +252,7 @@ const Profile = () => {
               const userData = JSON.parse(userStr);
 
               await axios.delete(
-                `http://192.168.29.22:5000/api/address/${addressId}`,
+                `https://indiaapay.com/api/address/${addressId}`,
                 {
                   headers: {
                     Authorization: `Bearer ${userData.token}`,

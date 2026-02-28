@@ -47,7 +47,7 @@ export default function OTPVerification({ navigation,route }) {
   if (enteredOtp === DEFAULT_OTP.toString()) {
     try {
       const response = await axios.post(
-        "http://192.168.29.22:5000/api/auth/createUser",
+        "https://indiaapay.com/api/auth/createUser",
         { mobile: mobileNumber,name:mobileNumber,country_code:countryCode }
       );
       console.log("LOGIN API RESPONSE:", response.data);

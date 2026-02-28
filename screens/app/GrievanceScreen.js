@@ -9,9 +9,9 @@ const GrievanceScreen = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <Text style={styles.content}>
           If you have any complaints or grievances, please reach out to us at:
-          {'\n\n'}Email: support@indiaapay.com
+          {'\n\n'}Email: support@PaySita.com
       
-          {'\n'}Address: IndiaaPay Pvt. Ltd., Mumbai, Maharashtra
+          {'\n'}Address: PaySita Pvt. Ltd., Mumbai, Maharashtra
         </Text>
       </ScrollView>
     </View>

@@ -41,7 +41,7 @@ const GSTFormScreen = () => {
     selectedPeriod;
 
   const handleSave = () => {
-    fetch('http://192.168.29.22:5000/api/gst', {
+    fetch('https://indiaapay.com/api/gst', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({

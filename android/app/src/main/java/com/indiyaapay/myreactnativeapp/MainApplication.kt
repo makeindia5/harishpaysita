@@ -1,4 +1,4 @@
-package com.indiyaapay.myreactnativeapp
+package com.PaySita.myreactnativeapp
 
 import android.app.Application
 import android.content.res.Configuration

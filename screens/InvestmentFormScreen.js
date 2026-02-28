@@ -49,7 +49,7 @@ const InvestmentFormScreen = () => {
     }
 
     try {
-      const response = await fetch('http://192.168.29.22:5000/submit-investment', {
+      const response = await fetch('https://indiaapay.com/submit-investment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

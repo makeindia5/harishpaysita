@@ -43,7 +43,7 @@ const DthDetailsScreen = () => {
   useEffect(() => {
     const fetchToken = async () => {
       try {
-        const response = await fetch('http://192.168.29.22:5000/api/token');
+        const response = await fetch('https://indiaapay.com/api/token');
         const data = await response.json();
         setToken(data.token);
         console.log('📲 Token from server:', data.token);

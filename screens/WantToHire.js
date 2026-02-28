@@ -92,7 +92,7 @@ const handleSubmit = async () => {
   });
 
   try {
-    const response = await axios.post('http://192.168.29.22:5000/want-to-hire', form, {
+    const response = await axios.post('https://indiaapay.com/want-to-hire', form, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

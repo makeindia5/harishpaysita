@@ -45,7 +45,7 @@ const TourAndTravelsForm = () => {
     }
 
     try {
-      const response = await fetch('http://192.168.29.22:5000/submit-tour-travel', {
+      const response = await fetch('https://indiaapay.com/submit-tour-travel', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

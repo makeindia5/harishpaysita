@@ -103,7 +103,7 @@ export default function OtherServicesFormScreen() {
 
     try {
       const res = await axios.post(
-        "http://192.168.29.22:5000/submit-other-services",
+        "https://indiaapay.com/submit-other-services",
         form,
         { headers: { "Content-Type": "application/json" }, timeout: 10000 }
       );

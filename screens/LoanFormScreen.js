@@ -48,7 +48,7 @@ const handleSubmit = async () => {
   }
 
   try {
-    const response = await fetch('http://192.168.29.22:5000/loan-finance', {
+    const response = await fetch('https://indiaapay.com/loan-finance', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)

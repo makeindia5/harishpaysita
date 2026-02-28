@@ -33,7 +33,7 @@ const ChangePassword = () => {
     const user = JSON.parse(storedUser);
 
     const res = await axios.post(
-      "http://192.168.29.22:5000/api/security/verify-passcode",
+      "https://indiaapay.com/api/security/verify-passcode",
       {
         userId: user.id,
         passcode: enteredPasscode

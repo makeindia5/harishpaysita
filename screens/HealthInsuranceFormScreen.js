@@ -58,7 +58,7 @@ const handleSubmit = async () => {
   }
 
   try {
-    const response = await fetch('http://192.168.29.22:5000/submit-health', {
+    const response = await fetch('https://indiaapay.com/submit-health', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

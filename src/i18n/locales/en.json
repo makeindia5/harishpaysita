@@ -11,7 +11,7 @@
   "help_support": "Help & Support",
   "help_support_description": "Customer support, your queries, FAQs, chat",
   "language_description": "Choose your preferred language to use the Indiaya Pay app.",
-  "about": "About IndiaaPay",
+  "about": "About PaySita",
   "download": "Download",
   "share": "Share",
   "popular_banks": "Popular banks",
@@ -475,7 +475,7 @@
     },
     
   "home": {
-    "brand_name": "IndiaaPay",
+    "brand_name": "PaySita",
     "transfer_money": "Transfer Money",
     "to_mobile": "To Mobile Number",
     "to_bank": "To Bank/UPI ID",
@@ -564,7 +564,7 @@
   },
 
   "home": {
-    "brand_name": "IndiaaPay",
+    "brand_name": "PaySita",
     "transfer_money": "Transfer Money",
     "to_mobile": "To Mobile Number",
     "to_bank": "To Bank/UPI ID",
@@ -1385,15 +1385,15 @@
   "about_us_para1": "Our goal is to make digital payments so easy, safe, and universally accepted that people never feel the need to carry cash or cards again. We believe India is at the cusp of a new mobile revolution, which will change the way we manage our money on the go. We see ourselves facilitating this change, through technology and dogged customer centricity.",
   "updated_on": "Updated On:",
   "all_versions": "All Versions",
-  "company_info": "IndiaaPay is a brand owned by {{company}} (CIN - {{cin}}). It is licensed by the Government of India for issuance and operation of a Semi Closed Prepaid Payment system."
+  "company_info": "PaySita is a brand owned by {{company}} (CIN - {{cin}}). It is licensed by the Government of India for issuance and operation of a Semi Closed Prepaid Payment system."
 ,
- "about_app": "About IndiaaPay",
+ "about_app": "About PaySita",
   "privacy_policy": "Privacy Policy",
   "terms_conditions": "Terms & Conditions",
   "grievance_redressal": "Grievance Redressal",
   
   "grievance_title": "Grievance Redressal",
-  "grievance_content": "If you have any complaints or grievances, please reach out to us at:\n\nEmail: support@indiaapay.com\n\nAddress: IndiaaPay Pvt. Ltd., Mumbai, Maharashtra",
+  "grievance_content": "If you have any complaints or grievances, please reach out to us at:\n\nEmail: support@PaySita.com\n\nAddress: PaySita Pvt. Ltd., Mumbai, Maharashtra",
   
   "privacy_title": "Privacy Policy",
   "privacy_content": "We value your privacy and are committed to safeguarding your data. This policy outlines the types of personal information we collect and how we use, disclose, and protect that information...",
@@ -1401,7 +1401,7 @@
   "terms_title": "Terms and Conditions",
   "terms_effective": "Effective Date: [24/6/2025]",
   "terms_updated": "Last Updated: [24/6/2025]",
-  "terms_intro": "Welcome to IndiaaPay. These Terms and Conditions (\"Terms\") govern your access to and use of our mobile application...",
+  "terms_intro": "Welcome to PaySita. These Terms and Conditions (\"Terms\") govern your access to and use of our mobile application...",
   "terms_agreement": "By using our Platform, you agree to these Terms...",
   "section_1": "1. Eligibility",
   "section_1_text": "You must be an individual aged 18 years or older...",

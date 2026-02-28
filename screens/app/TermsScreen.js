@@ -11,7 +11,7 @@ const TermsScreen = () => {
         <Text style={styles.date}>Last Updated: [24/6/2025]</Text>
 
         <Text style={styles.section}>
-          Welcome to IndiaaPay. These Terms and Conditions ("Terms") govern your access to and use of our mobile application, website, and related services ("Platform") that enable you to make digital payments, perform money transfers, manage investments, book travel, explore real estate services, buy insurance, and access various digital services.
+          Welcome to PaySita. These Terms and Conditions ("Terms") govern your access to and use of our mobile application, website, and related services ("Platform") that enable you to make digital payments, perform money transfers, manage investments, book travel, explore real estate services, buy insurance, and access various digital services.
         </Text>
 
         <Text style={styles.section}>
@@ -111,7 +111,7 @@ const TermsScreen = () => {
 
         <Text style={styles.heading}>12. Indemnification</Text>
         <Text style={styles.section}>
-          You agree to indemnify and hold harmless IndiaaPay, its officers, affiliates, and partners from any claims, liabilities, or damages arising from your misuse of the services.
+          You agree to indemnify and hold harmless PaySita, its officers, affiliates, and partners from any claims, liabilities, or damages arising from your misuse of the services.
         </Text>
 
         <Text style={styles.heading}>13. Governing Law</Text>

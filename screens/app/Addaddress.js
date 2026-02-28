@@ -59,7 +59,7 @@ const AddAddress = () => {
 
       // Send POST request to add address
       const response = await axios.post(
-        "http://192.168.29.22:5000/api/address",
+        "https://indiaapay.com/api/address",
         {
           userId: userId,
           address: address.trim(),

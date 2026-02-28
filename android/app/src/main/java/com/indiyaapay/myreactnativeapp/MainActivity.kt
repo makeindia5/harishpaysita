@@ -1,4 +1,4 @@
-package com.indiyaapay.myreactnativeapp
+package com.PaySita.myreactnativeapp
 
 import android.os.Build
 import android.os.Bundle

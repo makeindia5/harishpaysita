@@ -17,7 +17,7 @@ const Security = () => {
     const user = JSON.parse(storedUser);
 
     const res = await axios.get(
-      `http://192.168.29.22:5000/api/security/has-passcode/${user.id}`
+      `https://indiaapay.com/api/security/has-passcode/${user.id}`
     );
 
     if (res.data.hasPasscode) {

@@ -143,7 +143,7 @@ const handleSaveToDatabase = async () => {
 
   try {
     const res = await axios.post(
-      "http://192.168.29.22:5000/api/userDetails",   // ✅ FIXED URL
+      "https://indiaapay.com/api/userDetails",   // ✅ FIXED URL
       {
         user_id: Number(userId),
         details: selectedOptions,
