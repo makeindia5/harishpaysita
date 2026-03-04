@@ -37,5 +37,4 @@ yarn-error.*
 
 # secrets
 *.keystore
-credentials.json
 jobportal-*.json
