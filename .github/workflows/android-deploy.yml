@@ -58,4 +58,4 @@ jobs:
           EXPO_PUBLIC_API_URL: https://freepe.in
 
       - name: Submit to Play Internal
-        run: npx eas submit --platform android --track internal --non-interactive
+        run: npx eas submit --platform android --latest --non-interactive
